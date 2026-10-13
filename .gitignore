@@ -1,50 +1,64 @@
-# Python
+# ---------- Python ----------
 __pycache__/
 *.py[cod]
+*.egg-info/
 .venv/
 venv/
 env/
+
+# Инструменты и тесты
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.tox/
 .coverage
 .coverage.*
 htmlcov/
-*.egg-info/
 
-# Local environment settings
-.env
-.env.*
-!.env.example
-!.env.*.example
-
-# SQLite databases and temporary files
+# ---------- База данных (SQLite) ----------
 *.db
 *.db-journal
 *.db-wal
 *.db-shm
 *.sqlite
 *.sqlite3
-*.sqlite-journal
-*.sqlite-wal
-*.sqlite-shm
-*.sqlite3-journal
-*.sqlite3-wal
-*.sqlite3-shm
+*.sqlite*-journal
+*.sqlite*-wal
+*.sqlite*-shm
 
-# Frontend dependencies and build output
+# ---------- Node / Frontend ----------
 node_modules/
 dist/
+dist-ssr/
 build/
 .vite/
 coverage/
+*.local
+.eslintcache
+*.tsbuildinfo
 
-# Logs
+# ---------- Переменные окружения ----------
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# ---------- Логи ----------
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Editor and OS files
+# ---------- Редакторы и ОС ----------
 .idea/
-.vscode/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*~
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# ---------- Локальные заметки ----------
+TODO_APP_TECH_SPEC.md
